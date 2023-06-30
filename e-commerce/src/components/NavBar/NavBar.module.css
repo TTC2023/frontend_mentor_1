@@ -1,0 +1,28 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+}
+
+.left{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left img {
+    height: 20%;
+}
+
+.right{
+    display: flex;
+    width: 18%;
+    align-items: center;
+}
+
+.avatar {
+    height: 50%;
+    margin-left: 10%;
+}

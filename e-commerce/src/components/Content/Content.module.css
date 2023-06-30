@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 60vh;
+    text-align: left;
+    margin-right: 5%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}
+
+.header p {
+    color: #efa264;
+}
+
+.description {
+    font-weight: lighter;
+}
+
+.priceDiscount {
+    font-weight: lighter;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.discount {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #fdefe3;
+    color: #df8955;
+    font-size: 75%;
+    height: 100%;
+    margin-left: 3%;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 10%;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 35%;
+    height: 100%;
+    background-color: #f7f8fd;
+    border-radius: 5px;
+}
+
+.bottom button {
+    display: flex;
+    align-items: center;
+    width: 55%;
+    height: 100%;
+    justify-content: space-around;
+    border-radius: 5px;
+    border: none;
+    background-color: #f07c3a;
+    color: white;
+    cursor: pointer;
+}
+
+.cart {
+    color: white;
+}
+
+.operation{
+    cursor: pointer;
+}
+
+.mobileContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 35%;
+}
