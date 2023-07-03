@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    height: 45%;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 15px;
+    margin: 1%;
+    padding: 1%;
+    background-color: white;
+}

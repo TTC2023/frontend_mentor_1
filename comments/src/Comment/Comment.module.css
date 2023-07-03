@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    height: auto;  /* Let the container grow based on content */
+    min-height: 20%; 
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 15px;
+    margin: 1%;
+    padding: 1%;
+}
+
+.content {
+    display: flex;
+    height: 50%;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content img {
+    height: 100%;
+}
+
+.content p {
+    font-weight: lighter;
+}
+
+button {
+    height: 10%;
+    border: none;
+    background-color: transparent;
+    color: #5358b6;
+    cursor: pointer;
+}
+
+.score {
+    background-color: #f5f6fa;
+    width: 5%;
+    height: 80%;
+    margin: 2%;
+    border-radius: 10px;
+}
