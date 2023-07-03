@@ -10,7 +10,7 @@ const Comment = ({ comment }) => {
   const avatar = process.env.PUBLIC_URL + comment.user.image.png;
   
   return (
-    <div>
+    <div className={styles.commentContainer}>
       <div className={styles.container}>
         <div className={styles.score}>
           <img src={plus} alt="plus" />
@@ -31,9 +31,13 @@ const Comment = ({ comment }) => {
           </div>
         </div>
       </div>
+      <div className={styles.reply}>
       {comment.replies && comment.replies.map(reply =>
+      <div >
         <Reply key={reply.id} reply={reply} />
+      </div>
       )}
+      </div>
     </div>
   )
 }

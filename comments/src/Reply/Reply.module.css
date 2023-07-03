@@ -1,13 +1,20 @@
+.replyContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
 .container {
     display: flex;
     height: 45%;
-    width: 70%;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
+    width: 80%;
     background-color: white;
     border-radius: 15px;
     margin: 1%;
     padding: 1%;
-    background-color: white;
+}
+
+.vertical_line {
+    border: 1px solid #ebecf0; /* This creates the line */
+    height: 100%; /* This is how tall the line will be */
 }

@@ -1,22 +1,23 @@
+.commentContainer{
+    margin-top: 1%;
+    flex-direction: column;
+    height: 100px;
+    width: 600px;
+    margin-bottom: 2em;
+}
+
 .container {
     display: flex;
-    height: auto;  /* Let the container grow based on content */
-    min-height: 20%; 
-    max-width: 100%;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
     background-color: white;
     border-radius: 15px;
-    margin: 1%;
     padding: 1%;
 }
 
 .content {
     display: flex;
     height: 50%;
-    width: 80%;
-    justify-content: space-evenly;
+    width: 450px;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -37,9 +38,16 @@ button {
 }
 
 .score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #f5f6fa;
-    width: 5%;
-    height: 80%;
-    margin: 2%;
+    width: 20px;
+    height: auto;
     border-radius: 10px;
+    margin-right: 10%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }

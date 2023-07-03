@@ -1,7 +1,7 @@
 import './App.css';
 import Comment from '../src/Comment/Comment'
 import CurrentUser from './CurrentUser/CurrentUser';
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import data from './data.json'
 
 function App() {
@@ -14,9 +14,11 @@ function App() {
 
   return (
     <div className="App">
-      {comments.map(comment => 
-        <Comment key={comment.id} comment={comment} />
-      )}
+      <div className='container'>
+        {comments.map(comment =>
+          <Comment key={comment.id} comment={comment} />
+        )}
+      </div>
       <CurrentUser />
     </div>
   );
