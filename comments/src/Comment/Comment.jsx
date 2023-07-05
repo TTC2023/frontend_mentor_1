@@ -5,9 +5,14 @@ import plus from '../assets/icon-plus.svg'
 import reply from '../assets/icon-reply.svg'
 import Reply from '../Reply/Reply'
 
-const Comment = ({ comment }) => {
+const Comment = ({ comment, replyBox, setReplyBox }) => {
   
   const avatar = process.env.PUBLIC_URL + comment.user.image.png;
+  
+  const handleReply = () => {
+    setReplyBox(true)
+    console.log(replyBox)
+  }
   
   return (
     <div className={styles.commentContainer}>
@@ -23,7 +28,7 @@ const Comment = ({ comment }) => {
             <p>{comment.createdAt}</p>
             <div className={styles.reply}>
               <img src={reply} alt="reply" />
-              <button>Reply</button>
+              <button onClick={handleReply}>Reply</button>
             </div>
           </div>
           <div>

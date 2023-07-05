@@ -1,20 +1,66 @@
 .replyContainer {
     display: flex;
     justify-content: space-between;
-    padding: 1%;
+    height: 100px;
+    margin: 2em;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f6fa;
+    width: 20px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 10%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .container {
     display: flex;
-    height: 45%;
-    width: 80%;
+    height: 100px;
+    width: 500px;
     background-color: white;
     border-radius: 15px;
-    margin: 1%;
     padding: 1%;
 }
 
 .vertical_line {
     border: 1px solid #ebecf0; /* This creates the line */
     height: 100%; /* This is how tall the line will be */
+}
+
+.content {
+    display: flex;
+    height: 50%;
+    width: 450px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.avatar {
+    height: 40px;
+}
+
+.content p {
+    font-weight: lighter;
+}
+
+button {
+    height: 10%;
+    border: none;
+    background-color: transparent;
+    color: #5358b6;
+    cursor: pointer;
+}
+
+.reply {
+    width: 20%;
+}
+.delete {
+    margin-right: 5%;
 }

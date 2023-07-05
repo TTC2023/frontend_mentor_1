@@ -7,6 +7,7 @@ import data from './data.json'
 function App() {
 
   const [comments, setComments] = useState([])
+  const [replyBox, setReplyBox] = useState(false)
 
   useEffect(() => {
     setComments(data.comments)
@@ -15,9 +16,12 @@ function App() {
   return (
     <div className="App">
       <div className='container'>
-        {comments.map(comment =>
-          <Comment key={comment.id} comment={comment} />
-        )}
+        {replyBox ? <CurrentUser/> : null}
+        {comments.map(comment => (
+          <>
+            <Comment key={comment.id} comment={comment} setReplyBox={setReplyBox} replyBox={replyBox} />
+          </>
+        ))}
       </div>
       <CurrentUser />
     </div>
