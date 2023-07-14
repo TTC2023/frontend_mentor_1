@@ -63,4 +63,46 @@ button {
 }
 .delete {
     margin-right: 5%;
+    cursor: pointer;
+    z-index: 1000px;
 }
+
+.popup {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 1%;
+}
+
+.popup p {
+    text-align: center;
+    width: 80%;
+}
+
+.popupButtons {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cancel {
+    background-color: #67717e;
+    color: #b1bac1;
+    height: 100%;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.deleteButton {
+    background-color: #ed6368;
+    color: #b1bac1;
+    height: 100%;
+    width: 40%;
+    border-radius: 5px;
+}
+
