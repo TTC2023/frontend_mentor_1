@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import styles from '../components/Content.module.css'
+import dollar from '../assets/icon-dollar.svg'
 
 const Content = () => {
 
-    const [bill, setBill] = useState()
+    const [bill, setBill] = useState(0)
 
     const handleBillChange = (event) => {
         setBill(event.target.value);
@@ -14,16 +15,21 @@ const Content = () => {
             <form className={styles.form}>
                 <div className={styles.inputs}>
                     <label className={styles.label} htmlFor="bill">Bill</label>
-                    <input type="text" onChange={handleBillChange}/>
+                    <div className={styles.billForm}>
+                        <img className={styles.billSymbol} src={dollar} alt="dollar sign" />
+                        <input className={styles.billInput} type="text" onChange={handleBillChange} />
+                    </div>
                 </div>
-                <div className={styles.inputs}>
+                <div >
                     <label className={styles.label} htmlFor="tip">Select Tip %</label>
-                    <input type="button" placeholder='5%' />
-                    <input type="button" placeholder='10%' />
-                    <input type="button" placeholder='15%' />
-                    <input type="button" placeholder='25%' />
-                    <input type="button" placeholder='50%' />
-                    <input type="number" placeholder='' />
+                    <div className={styles.buttonContainer}>
+                        <input className={styles.button} type="button" placeholder='5%' />
+                        <input className={styles.button} type="button" placeholder='10%' />
+                        <input className={styles.button} type="button" placeholder='15%' />
+                        <input className={styles.button} type="button" placeholder='25%' />
+                        <input className={styles.button} type="button" placeholder='50%' />
+                        <input className={styles.button} type="number" placeholder='' />
+                    </div>
                 </div>
                 <div className={styles.inputs}>
                     <label className={styles.label} htmlFor="People">Number of People</label>

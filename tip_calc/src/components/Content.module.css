@@ -14,8 +14,24 @@
     text-align: left;
 }
 
+.billForm {
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.billSymbol {
+    height: 65%;
+    margin-left: 5px;
+}
+
+.billInput {
+    border: none;
+}
+
 .label{
     background-color: white;
+    border: solid red 1px;
 }
 
 .form {
@@ -25,8 +41,20 @@
     background-color: transparent;
     height: 80%;
     width: 40%;
-    border: red solid 1px;
 }
+
+.buttonContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* creates three columns of equal width */
+    gap: 20px; /* adds some space between the buttons */
+    background-color: white;
+}
+
+.button {
+    height: 150%;
+    width: 80%; /* makes each button fill its grid cell */
+}
+
 
 .display {
     display: flex;
