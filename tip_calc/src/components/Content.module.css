@@ -1,0 +1,40 @@
+.content {
+    display: flex;
+    width: 90%;
+    height: 50vh;
+    background-color: white;
+    margin-top: 2%;
+    border-radius: 25px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: left;
+}
+
+.label{
+    background-color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: transparent;
+    height: 80%;
+    width: 40%;
+    border: red solid 1px;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 25px;
+    background-color: #1a484b;
+    height: 80%;
+    width: 40%;
+    
+}
