@@ -1,0 +1,98 @@
+.content {
+    background-color: #1f252f;
+    height: 50vh;
+    width: 35%;
+    border-radius: 25px;
+}
+
+.starBG {
+    display: flex;
+    height: 10%;
+    width: 10%;
+    background-color: #262e38;
+    border-radius: 100%;
+    margin: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.words {
+    color: white;
+    margin: 5%;
+}
+
+.words p {
+    color: #555d68;
+}
+
+.rate {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rateButton {
+    background-color: #252f3a;
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    color: #969faa;
+}
+
+.submit {
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 90%;
+    height: 45px;
+    border-radius: 20px;
+    background-color: #f07539;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: white;
+    color: #f07539;
+}
+
+.selected {
+    background-color: #f07539;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.thanks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+.outOf p {
+    color: #f07539;
+}
+
+.outOf {
+    background-color: #262e38;
+    padding: 2%;
+    margin-top: 2%;
+    border-radius: 25px;
+}
+
+.thankYou {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+
+.thankYou {
+    text-align: center;
+}
